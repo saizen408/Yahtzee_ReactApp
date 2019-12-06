@@ -1,15 +1,20 @@
 {
   "name": "yahtzee",
+  "homepage": "https://8eni.github.com/Yahtzee_ReactApp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "1.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
